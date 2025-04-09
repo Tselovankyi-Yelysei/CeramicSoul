@@ -15,7 +15,7 @@
     }
 
     &__text {
-        margin-top: 20px;
+        margin-block-start: 20px;
         color: $dark;
         font-size: 16px;
         font-weight: 400;
@@ -66,9 +66,15 @@
 
         &__text {
             &_fixed {
-                width: 566px;
+                inline-size: 566px;
             }
         }
     }
 
+}
+
+@media screen and (min-width: 1920px) {
+    .activities {
+        padding-top: 100px;
+    }
 }
