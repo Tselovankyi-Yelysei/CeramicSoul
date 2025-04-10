@@ -1,13 +1,14 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .footer {
-    padding-top: 50px;
+    padding: 50px 0;
     background-color: $dark;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
+
     }
 
     &__title {
@@ -37,7 +38,6 @@
     }
 
     &__email {
-
         background-color: transparent;
         border: none;
         border-bottom: 1px solid $ui-active;
@@ -55,5 +55,57 @@
         }
     }
 
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 66px;
+    }
+
+    &__links-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            color: $light;
+            text-decoration: none;
+        }
+    }
+
+    &__follow-us {
+        ul {
+            padding: 0;
+            display: flex;
+            column-gap: 10px;
+
+
+            li {
+                list-style-type: none;
+                padding: 0;
+
+
+
+            }
+
+            span {
+                font-size: 24px;
+                color: $light;
+
+                &::before {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: $light;
+    }
 
 }

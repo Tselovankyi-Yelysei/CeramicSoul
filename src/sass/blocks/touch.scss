@@ -53,20 +53,7 @@
 
     &__check-block {
         margin-top: 20px;
-        display: flex;
-        align-items: center;
-
-        a {
-            color: #a22dc6;
-            text-decoration: none;
-            margin-left: 2px;
-        }
-    }
-
-    &__checkbox {
-        margin-right: 15px;
-        width: 15px;
-        height: 15px;
+        color: $dark;
     }
 
     &__btn {

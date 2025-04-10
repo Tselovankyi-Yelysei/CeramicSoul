@@ -1,0 +1,28 @@
+@use "/src/sass/base/variables.scss" as *;
+
+// <label class="terms-checkbox">
+//     <input class="terms-checkbox__box" type="checkbox">
+//     I agree with the <a href="#">terms</a>
+// </label>
+
+.terms-checkbox {
+    color: $light;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    line-height: 28px;
+
+    a {
+        color: #a22dc6;
+        text-decoration: none;
+        margin-left: 2px;
+    }
+
+    &__box {
+        margin-right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+}
